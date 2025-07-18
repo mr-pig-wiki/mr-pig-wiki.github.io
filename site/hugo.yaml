@@ -3,9 +3,11 @@ author: MR Physics and Instrumentation Group
 languageCode: en-us
 title: MR Physics and Instrumentation Group Wiki
 theme: hextra
+
 caches:
   images:
     dir: :cacheDir/images
+
 menu:
   main:
     - name: About
@@ -23,3 +25,16 @@ menu:
       url: https://github.com/mr-pig-wiki
       params:
         icon: github
+
+params:
+  description: Open-source wiki for tools developed by the MR Physics and Instrumentation Group.
+
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: images/martinos_logo_transparent.png
+      # width: 40
+      # height: 20
+      link: /
+    width: wide
