@@ -4,4 +4,7 @@ draft: false
 title: 'MR Physics and Instrumentation Group Wiki'
 ---
 
-This site is a work in progress, and is intended to be a resource for the MR Physics and Instrumentation Group at the Martinos Center for Biomedical Imaging. It is built using the [Hugo](https://gohugo.io/) static site generator and the [Hextra](https://themes.gohugo.io/themes/hextra/) theme. Talk to Lincoln about getting your stuff on the site!
+This site is a work in progress, and is intended to be a resource for the MR Physics and Instrumentation Group at the Martinos Center for Biomedical Imaging. It is built using the [Hugo](https://gohugo.io/) static site generator and the [Hextra](https://themes.gohugo.io/themes/hextra/) theme.
+
+See [Update or Add a Wiki](/contributing/) to contribute to an existing group
+wiki or onboard a new one.

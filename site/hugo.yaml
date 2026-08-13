@@ -26,6 +26,9 @@ menu:
     - name: Phantoms
       pageRef: /phantoms
       weight: 3
+    - name: Contribute
+      pageRef: /contributing
+      weight: 4
     - name: Search
       weight: 100
       params:
