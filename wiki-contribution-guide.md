@@ -1,6 +1,4 @@
----
-title: Update or Add a Wiki
----
+# Update or Add a Wiki
 
 Each group wiki has its own GitHub repository. The main website includes those
 repositories as Git submodules and mounts their `content/` directories into the

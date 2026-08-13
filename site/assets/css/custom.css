@@ -1,0 +1,33 @@
+html {
+  scroll-padding-top: calc(var(--navbar-height) + 1rem);
+}
+
+/* Keep navigation available while reading long wiki pages. */
+.nav-container {
+  position: sticky !important;
+  top: 0;
+  z-index: 50;
+}
+
+@media (min-width: 48rem) {
+  .sidebar-container {
+    position: sticky !important;
+    top: var(--navbar-height) !important;
+    max-height: calc(100vh - var(--navbar-height));
+  }
+}
+
+.hextra-toc > .hextra-scrollbar {
+  top: var(--navbar-height) !important;
+}
+
+.hextra-toc a.toc-active {
+  border-inline-start: 2px solid currentColor;
+  color: var(--hx-color-primary-600);
+  font-weight: 600;
+  padding-inline-start: 0.5rem;
+}
+
+.dark .hextra-toc a.toc-active {
+  color: var(--hx-color-primary-400);
+}
