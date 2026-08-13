@@ -2,6 +2,9 @@
 name: Deploy Hugo site to Pages
 
 on:
+  pull_request:
+    branches:
+      - main
   # Runs on pushes targeting the default branch
   push:
     branches:
@@ -83,6 +86,7 @@ jobs:
 
   # Deployment job
   deploy:
+    if: github.event_name != 'pull_request'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

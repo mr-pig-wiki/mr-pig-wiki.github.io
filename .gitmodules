@@ -1,3 +1,7 @@
 [submodule "site/themes/hextra"]
 	path = site/themes/hextra
 	url = https://github.com/imfing/hextra.git
+[submodule "site/content-sources/phantom-wiki"]
+	path = site/content-sources/phantom-wiki
+	url = https://github.com/mr-pig-wiki/phantom-wiki.git
+	branch = main
