@@ -1,8 +1,15 @@
-baseURL: https://mri-pig-wiki.github.io/
+baseURL: https://mr-pig-wiki.github.io/
 author: MR Physics and Instrumentation Group
 languageCode: en-us
 title: MR Physics and Instrumentation Group Wiki
 theme: hextra
+
+module:
+  mounts:
+    - source: content
+      target: content
+    - source: content-sources/phantom-wiki/content
+      target: content/phantoms
 
 caches:
   images:
@@ -16,6 +23,9 @@ menu:
     - name: Projects
       pageRef: /projects
       weight: 2
+    - name: Phantoms
+      pageRef: /phantoms
+      weight: 3
     - name: Search
       weight: 100
       params:
