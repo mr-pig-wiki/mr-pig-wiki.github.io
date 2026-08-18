@@ -1,1 +1,12 @@
 <script defer src="{{ `js/toc-active.js` | relURL }}"></script>
+{{ $path := .RelPermalink }}
+{{ if hasPrefix $path "/phantoms/" }}
+  <script>document.documentElement.dataset.wikiGroup = "phantoms";{{ if eq $path "/phantoms/" }}document.documentElement.dataset.wikiRoot = "true";{{ end }}</script>
+{{ else if hasPrefix $path "/rf-lab/" }}
+  <script>document.documentElement.dataset.wikiGroup = "rf-lab";{{ if eq $path "/rf-lab/" }}document.documentElement.dataset.wikiRoot = "true";{{ end }}</script>
+{{ else if hasPrefix $path "/tabletop-mri/" }}
+  <script>document.documentElement.dataset.wikiGroup = "tabletop-mri";{{ if eq $path "/tabletop-mri/" }}document.documentElement.dataset.wikiRoot = "true";{{ end }}</script>
+{{ end }}
+{{ if or (hasPrefix $path "/phantoms/") (hasPrefix $path "/rf-lab/") (hasPrefix $path "/tabletop-mri/") }}
+  <script defer src="{{ `js/wiki-page-browser.js` | relURL }}"></script>
+{{ end }}

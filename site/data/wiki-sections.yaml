@@ -1,0 +1,20 @@
+- title: Anthropomorphic Phantoms
+  label: Models and fabrication
+  description: Open designs, numerical models, construction guidance, and references for MRI phantoms developed by the group.
+  link: /phantoms/
+  image: /phantoms/Giorgio_phant.jpg
+  imageAlt: Anthropomorphic head phantom
+
+- title: RF Lab
+  label: Coils and electronics
+  description: Practical documentation for RF coil design, amplifiers, current drivers, switching systems, and lab-tested hardware.
+  link: /rf-lab/
+  image: /rf-lab/3t-toroidal-chokes/Choke_picture.jpg
+  imageAlt: RF toroidal choke hardware
+
+- title: Tabletop MRI
+  label: Educational MRI systems
+  description: Hardware, source code, teaching materials, and build notes for low-cost tabletop MRI scanner platforms.
+  link: /tabletop-mri/
+  image: /tabletop-mri/System_cart.jpg
+  imageAlt: Tabletop MRI scanner system cart

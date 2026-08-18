@@ -8,8 +8,14 @@ module:
   mounts:
     - source: content
       target: content
+    - source: data
+      target: data
     - source: content-sources/phantom-wiki/content
       target: content/phantoms
+    - source: content-sources/rf-lab-wiki/content
+      target: content/rf-lab
+    - source: content-sources/tabletop-mri-wiki/content
+      target: content/tabletop-mri
 
 caches:
   images:
@@ -23,8 +29,8 @@ menu:
     - name: Projects
       pageRef: /projects
       weight: 2
-    - name: Phantoms
-      pageRef: /phantoms
+    - name: Contribute
+      url: https://github.com/mr-pig-wiki/mr-pig-wiki.github.io/blob/d6617db/wiki-contribution-guide.md
       weight: 3
     - name: Search
       weight: 100

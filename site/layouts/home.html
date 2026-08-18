@@ -1,0 +1,47 @@
+{{ define "main" }}
+  <div class="wiki-home">
+    <section class="wiki-hero" aria-labelledby="wiki-hero-title">
+      <div class="wiki-home-shell wiki-hero-inner">
+        <p class="wiki-eyebrow">A. A. Martinos Center for Biomedical Imaging</p>
+        <h1 id="wiki-hero-title">Open tools for MRI research.</h1>
+        <p class="wiki-hero-copy">
+          Designs, documentation, and practical knowledge from the MR Physics
+          and Instrumentation Group—maintained by the people who build and use
+          them.
+        </p>
+        <div class="wiki-hero-actions">
+          <a class="wiki-button wiki-button-primary" href="#wiki-collections">Explore the wikis</a>
+          <a class="wiki-button wiki-button-secondary" href="https://github.com/mr-pig-wiki/mr-pig-wiki.github.io/blob/d6617db/wiki-contribution-guide.md">Contribution guide</a>
+        </div>
+      </div>
+    </section>
+
+    <main class="wiki-home-shell wiki-home-main">
+      <section id="wiki-collections" class="wiki-collections" aria-labelledby="wiki-collections-title">
+        <div class="wiki-section-heading">
+          <div>
+            <p class="wiki-section-kicker">Explore</p>
+            <h2 id="wiki-collections-title">Group wikis</h2>
+          </div>
+          <p>Start with a collection, then use its side navigation to browse individual pages.</p>
+        </div>
+
+        <div class="wiki-card-grid">
+          {{ range (index site.Data "wiki-sections") }}
+            <article class="wiki-card">
+              <a class="wiki-card-image" href="{{ .link | relURL }}" aria-label="Open {{ .title }}">
+                <img src="{{ .image | relURL }}" alt="{{ .imageAlt }}" loading="lazy" />
+              </a>
+              <div class="wiki-card-body">
+                <p class="wiki-card-label">{{ .label }}</p>
+                <h3><a href="{{ .link | relURL }}">{{ .title }}</a></h3>
+                <p class="wiki-card-description">{{ .description }}</p>
+                <a class="wiki-card-link" href="{{ .link | relURL }}">View collection</a>
+              </div>
+            </article>
+          {{ end }}
+        </div>
+      </section>
+    </main>
+  </div>
+{{ end }}

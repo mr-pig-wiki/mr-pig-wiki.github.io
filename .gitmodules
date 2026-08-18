@@ -5,3 +5,11 @@
 	path = site/content-sources/phantom-wiki
 	url = https://github.com/mr-pig-wiki/phantom-wiki.git
 	branch = main
+[submodule "site/content-sources/rf-lab-wiki"]
+	path = site/content-sources/rf-lab-wiki
+	url = https://github.com/mr-pig-wiki/rf-lab-wiki.git
+	branch = main
+[submodule "site/content-sources/tabletop-mri-wiki"]
+	path = site/content-sources/tabletop-mri-wiki
+	url = https://github.com/mr-pig-wiki/tabletop-mri-wiki.git
+	branch = main
